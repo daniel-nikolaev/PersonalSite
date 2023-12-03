@@ -1,0 +1,23 @@
+.divider-solid {
+  border-style: solid;
+}
+.divider-dashed {
+  border-style: dashed;
+}
+
+hr.dashed {
+  border-top: 3px dashed #000;
+}
+
+hr.dotted {
+  border-top: 3px dotted #000;
+}
+
+hr.solid {
+  border-top: 3px solid #000;
+}
+
+hr.rounded {
+  border-top: 8px solid #000;
+  border-radius: 5px;
+}
