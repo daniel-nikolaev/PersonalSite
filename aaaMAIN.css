@@ -2,10 +2,9 @@
 /**/
 
 /*Import CSS Scripts from internal code*/
-@import "css/align.css";
 @import "css/color.css";
 @import "css/divider.css";
-@import "css/forms.css";
+@import "css/general.css";
 @import "css/styles.css";
 @import "css/topnav.css";
 
@@ -13,4 +12,5 @@
 
 
 /*Icons for Nav Bar*/
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@import url("https://kit.fontawesome.com/0ecee0f13d.js");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
