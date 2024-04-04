@@ -3,6 +3,10 @@
   overflow: hidden;
   background-color: #041f8e;
   font-family: Arial;
+  
+
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 /* Links inside the navbar */
@@ -15,12 +19,6 @@
   text-decoration: none;
 }
 
-/* Create a right-aligned (split) link inside the navigation bar */
-.topnav a.split {
-  float: right;
-  background-color: #041f8e;
-  color:white;
-}
 
 /* The dropdown container */
 .dropdown {
@@ -42,7 +40,7 @@
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #808080;
+  background-color: #041fff;
 }
 
 /* Dropdown content (hidden by default) */
@@ -56,9 +54,6 @@
   z-index: 1;
 }
 
-.active {
-  background-color: #00c4ba;
-}
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
@@ -77,4 +72,40 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }

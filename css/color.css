@@ -8,32 +8,11 @@ div {
     left: 0;
 }
 
-.required {
-    color:#FF0000;
-}
-
 .navbar {
     background-color: #041f8e;
     left: 0;
 }
-.footer {
-    display: block;
-    width: 100%;
-    background-color: #10A7F9;
-    left: 0;
-    bottom: 0;
-    padding: 5px;
-}
 
-.awsh2 {
-    color:#FF9900;
-}
-.w3h2 {
-    color:#08aa6d;
-}
-.fah2 {
-    color:#548ed8;
-}
-.icph2 {
-    color:#1977d3;
-}
+.active {
+    background-color: #00c4ba;
+  }
