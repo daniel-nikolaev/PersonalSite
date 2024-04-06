@@ -6,6 +6,11 @@
   min-height: 100%;     
   scroll-padding-top: 25pxx;
 
+  /*
+  margin-left: auto;
+  margin-right: auto;
+  */
+  
   /* Create the parallax scrolling effect */
   position:relative;
   background-attachment: fixed;
