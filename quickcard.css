@@ -65,9 +65,11 @@ body {
   align-items: center;
   transition: transform 0.3s;
 }
+/* 
 .card:hover {
   transform: rotateY(10deg);
-}
+} 
+*/
 
 /*Styling for External Links*/
 .links {
