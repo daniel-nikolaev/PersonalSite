@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Selects all html elements */
 * 
 {
   margin: 0;
@@ -7,6 +7,7 @@
   white-space: nowrap;
 }
   
+/* styling for built in html texts */
 h1 {
   display:inline-block;
   margin: 10px 0;
@@ -16,7 +17,12 @@ h1 {
   display:inline-block;
   margin: 10px 0;
 }
+p {
+  color:inherit;
+  font-size: 0.9em;
+}
 
+/* Styling for Main Content Area */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #212129;
@@ -25,12 +31,29 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-.card-container {
-  background-color:inherit;
-  perspective: 1000px; /* For a subtle 3D effect on hover */
+.info {
+  color:white;
+  background-color:#4c5265;
+  margin-top: 2.5%;
+  text-align: center;
+  padding: 20px;
+  margin-bottom:2.5%;
 }
 
+/* Main Picture */
+.avatar {
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+  margin-top: 2.5%; /* Half outside the card */
+  border: 5px solid #4c5265; /* Creates a nice border effect */
+}
+
+/* Styling for the card itself */
+.card-container {
+  background-color:inherit; /* gets background color from the main background */
+  perspective: 1000px; /* For a subtle 3D effect on hover */
+}
 .card {
   width: 75vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -42,58 +65,34 @@ body {
   align-items: center;
   transition: transform 0.3s;
 }
-
-/*
 .card:hover {
   transform: rotateY(10deg);
 }
-*/
 
-.avatar {
-  width: 50%;
-  height: 100%;
-  border-radius: 50%;
-  margin-top: 2.5%; /* Half outside the card */
-  border: 5px solid #4c5265; /* Creates a nice border effect */
-}
-
-.info {
-  color:white;
-  background-color:#4c5265;
-  margin-top: 2.5%;
-  text-align: center;
-  padding: 20px;
-  margin-bottom:2.5%;
-}
-
-p {
-  color:inherit;
-  font-size: 0.9em;
-}
-
+/*Styling for External Links*/
 .links {
   color:#add8e6;
   display:block;
   font-size: 0.9em;
 }
 
-.social-icons {
+.link-icons {
   background-color:inherit;
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
-.social-icons img {
+.link-icons img {
   width: 24px;
   height: 24px;
   margin: 0 10px;
 }
 
-.social-icons a {
+.link-icons a {
   transition: transform 0.3s;
 }
 
-.social-icons a:hover {
+.link-icons a:hover {
   transform: scale(1.3);
 }
