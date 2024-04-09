@@ -12,14 +12,14 @@ h1 {
   margin: 10px 0;
 }
 .likeh2 {
-  color:black;
+  color:white;
   display:inline-block;
   margin: 10px 0;
 }
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #e9ecef;
+  background-color: #212129;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,13 +27,14 @@ body {
 }
 
 .card-container {
+  background-color:inherit;
   perspective: 1000px; /* For a subtle 3D effect on hover */
 }
 
 .card {
   width: 75vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: #3d3e51;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -53,10 +54,12 @@ body {
   height: 100%;
   border-radius: 50%;
   margin-top: 2.5%; /* Half outside the card */
-  border: 5px solid white; /* Creates a nice border effect */
+  border: 5px solid #4c5265; /* Creates a nice border effect */
 }
 
 .info {
+  color:white;
+  background-color:#4c5265;
   margin-top: 2.5%;
   text-align: center;
   padding: 20px;
@@ -64,16 +67,18 @@ body {
 }
 
 p {
-  color: #666;
+  color:inherit;
   font-size: 0.9em;
 }
 
 .links {
+  color:#add8e6;
   display:block;
   font-size: 0.9em;
 }
 
 .social-icons {
+  background-color:inherit;
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -90,5 +95,5 @@ p {
 }
 
 .social-icons a:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
