@@ -1,11 +1,15 @@
 body {
     background-color: #eaeaea;
-    display: inline-block;
-    left: 0;
 }
 div {
     background-color: #eaeaea;
     left: 0;
+}
+table, th, td {
+    border:1px solid #041f8e;
+}
+.footer {
+    background-color: #10A7F9;
 }
 
 .navbar {
@@ -15,4 +19,10 @@ div {
 
 .active {
     background-color: #00c4ba;
-  }
+}
+.nonactive {
+    background-color: #041f8e;
+}
+.quickcard {
+    background-color: #10A7F9;
+}
