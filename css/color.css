@@ -6,9 +6,10 @@ div {
     left: 0;
 }
 table, th, td {
-    border:1px solid #041f8e;
+    border:1px solid #10A7F9;
+    background-color: #041f8e;
 }
-.footer {
+p {
     background-color: #10A7F9;
 }
 
@@ -19,10 +20,4 @@ table, th, td {
 
 .active {
     background-color: #00c4ba;
-}
-.nonactive {
-    background-color: #041f8e;
-}
-.quickcard {
-    background-color: #10A7F9;
 }

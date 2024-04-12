@@ -8,27 +8,9 @@ body {
 
     background-color:gray;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
 }
 
-.footer {
-    width:100% - 5px;
-    margin-top:auto;
-    display: block;
-    left: 0;
-    bottom: 0;
-    padding:5px;
-}
-
-.split {
-    float: right;
-}
-.right {
-    float: right;
-    right:0;
-    margin-right:0;
-}
-.hamburgerright {
-    margin-right: 0px;
+table, th, td {
+    text-align: center;
 }
