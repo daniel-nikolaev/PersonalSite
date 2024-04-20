@@ -5,8 +5,6 @@ html, body {
 
 
 body {
-
-    background-color:gray;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -32,3 +30,23 @@ body {
 .hamburgerright {
     margin-right: 0px;
 }
+
+.flex-footer {
+    background-color: #10A7F9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* justify-content: space-around; */
+    align-items: center;
+    align-content: space-between;
+  }
+
+
+.flex-footer > div {
+    text-align: center;
+    flex-basis: 15%;
+    background-color: #00c4ba;
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+  }

@@ -1,5 +1,8 @@
+html {
+    background-color: #212129;
+}
 body {
-    background-color: #eaeaea;
+    background-color: inherit;
 }
 div {
     background-color: #eaeaea;

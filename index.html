@@ -23,7 +23,7 @@
 
 <!-- Header Stuff -->
   <header>
-    <div class="navbar" id="navbar">
+    <div class="navbar" id="Navbar">
       <a class="active" href="https://danielnik.com"><i class="fa fa-fw fa-home"></i> Home</a>
       <a class="nonactive"href="/resume"><i class="fa-solid fa-user"></i> Resume</a> 
       
@@ -47,6 +47,10 @@
       </div>    
       
       <a href="https://card.danielnik.com" class="split"><i class="fa-regular fa-address-card"></i> Quick Card</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      
     </div>
 
       
@@ -63,15 +67,38 @@
       </div>
     </div>
 
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("Navbar");
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+      </script>
   </body>
 
 <!-- Footer Things -->
   <footer class=footer>
-    <p> hi</p>
+    <div class="flex-footer">
+      <div>
+        <table>
+          <tr>
+            Hi
+          </tr>
+        </table>
+      </div>
+      <div>Links</div>
+      <div>Development</div>
+      <div></div>
+    </div>
+
     <table style="width:100%">
       <tr>
         <th>Person 1</th>
-        <th>Person 2</th>
+        <th>Built Using</th>
         <th>Person 3</th>
       </tr>
       <tr>
