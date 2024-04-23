@@ -19,6 +19,27 @@
   background-size: cover ;
 }
 
+.parallax-resume-education {
+  /* The image used */
+  background-image: url("../pics/education.jpeg");
+
+  /* Full height */
+  min-height: 100%;     
+  scroll-padding-top: 25px;
+
+  /*
+  margin-left: auto;
+  margin-right: auto;
+  */
+  
+  /* Create the parallax scrolling effect */
+  position:relative;
+  background-attachment: fixed;
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: cover ;
+}
+
 .caption {
   position: absolute;
   left: 0;

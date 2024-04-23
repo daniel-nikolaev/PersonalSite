@@ -1,13 +1,15 @@
 html {
     background-color: #212129;
+    color:white;
 }
 body {
     background-color: inherit;
+    color:inherit;
 }
-div {
-    background-color: #eaeaea;
-    left: 0;
+.buford, .sans, .gt, .uga, .ung {
+    background-color: #00c4ba;
 }
+
 table, th, td {
     border:1px solid #041f8e;
 }

@@ -5,17 +5,20 @@
   border-style: dashed;
 }
 
-
+/* <hr class="dashed"> */
 hr.dashed {
   border-top: 3px dashed #000;
 }
+/* <hr class="dotted"> */
 hr.dotted {
   border-top: 3px dotted #000;
 }
+/* <hr class="solid"> */
 hr.solid {
   border-top: 3px solid #000;
 }
+/* <hr class="rounded"> */
 hr.rounded {
-  border-top: 8px solid #000;
+  border-top: 8px solid inherit;
   border-radius: 5px;
 }
