@@ -27,4 +27,5 @@ aside {
     float: right;
     font-style: bold;
     background-color: #ADD8E6;
+    display: block;
   }
