@@ -1,14 +1,10 @@
-
-/**/
-
 /*Import CSS Scripts from internal code*/
 @import "css/color.css";
+@import "css/custom-classes.css";
+@import "css/default-classes.css";
 @import "css/dividers.css";
-@import "css/general.css";
 @import "css/parallax.css";
 @import "css/topnav.css";
-
-
 
 
 

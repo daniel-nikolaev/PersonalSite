@@ -1,0 +1,30 @@
+/* Selects all html elements */
+* 
+{
+  box-sizing: border-box;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+html, body {
+    height: 100%;
+    margin:0;
+    font-family: 'Albert Sans';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    padding-left:15px;
+}
+
+aside {
+    width: 30%;
+    margin-left: 15px;
+    float: right;
+    font-style: bold;
+    background-color: #ADD8E6;
+  }

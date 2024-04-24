@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<!-- Head Stuff -->
   <head>
     <!--Website Tab Title-->
     <title>Resume</title>
     <!--Website Favicon-->
     <link rel="icon" type="image/x-icon" href="../pics/favicon.png">
-    <!--Linking CSS Sheet that has all other CSS's attached-->
+    <!--Linking MAIN CSS Sheet -->
     <link rel="stylesheet" href="../aaaMAIN.css">
 
-    <!-- Load an icon library -->
+    <!-- Icon library From Font-Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/0ecee0f13d.js" crossorigin="anonymous"></script>
     
@@ -21,12 +20,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-<!-- Header Stuff -->
   <header>
     <div class="navbar" id="Navbar">
-      <a class="active" href="https://danielnik.com"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a class="active" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
       <a class="nonactive"href="/resume"><i class="fa-solid fa-user"></i> Resume</a> 
-      
+      <!-- certs dropdown -->
       <div class="dropdown">
         <button class="dropbtn"><i class="fa fa-certificate"></i> Certifications
           <i class="fa fa-caret-down"></i>
@@ -35,7 +33,7 @@
           <a class="nonactive" href="#">SANS/GFACT </a>
         </div>
       </div>
-
+      <!-- awards dropdown -->
       <div class="dropdown">
         <button class="dropbtn"><i class="fa fa-award"></i> Awards
           <i class="fa fa-caret-down"></i>
@@ -44,15 +42,20 @@
           <a class="nonactive" href="#">NCSF</a>
           <a class="nonactive" href="#">CyberStart America</a>
         </div>
-      </div>    
-      
+      </div>  
+      <!-- quick card link -->
       <a href="https://card.danielnik.com" class="split"><i class="fa-regular fa-address-card"></i> Quick Card</a>
     </div>
-      
   </header>
 
-<!-- Body Stuff -->
   <body>
+    <section id="certs" class="certs">
+      <h2>Certifications</h2>
+      <!-- GIAC/SANS -->
+      <h3>GIAC/SANS</h3>
+      <h2></h2>
+      <!-- AHA CPR/BLS -->
+    </section>
     <br>
     <section id="education" style="background-color: #10A7F9;">
       <h2>Education</h2>
@@ -60,17 +63,16 @@
       <div id="Buford" class="buford">
         <h3>Buford High School</h3>
         <dl>
-          <dt>Honors/AP Student</dt>
-          <dt>3.96 GPA</dt>
-          <dt>35 ACT</dt>
-          <dt>FBLA, HOSA, DECA, NHS, BETA, CSHS</dt>
+          <dd>Honors/AP Student</dd>
+          <dd>3.96 GPA</dd>
+          <dd>35 ACT</dd>
+          <dd>FBLA, HOSA, DECA, NHS, BETA, CSHS</dd>
         </dl>
       </div>
       <!-- SANS -->
       <div id="SANS" class="sans">
         <h3 style="display: inline;">SANS Institute</h3>
-        
-        <a href="https://www.giac.org/certified-professional/Daniel-Nikolaev/224060" target="blank" style="color:black; text-decoration:none;">GIAC Certified</a>
+        <h3><a href="https://www.giac.org/certified-professional/Daniel-Nikolaev/224060" target="blank">  - GIAC Certified</a></h3>
         <dl>
           <dt>SEC275: Foundations: Computers, Technology, & Security</dt>
           <dd>June 2023 - September 2023</dd>
@@ -84,17 +86,26 @@
       <div id="GT" class="gt">
         <h3>Georgia Institute of Technology</h3>
         <dl>
-          <dt>CS1301: Introduction to Computing</dt>
+          <dt>CS 1301: Introduction to Computing</dt>
+          <dd>April 2024 - Present</dd>
           <dt>CS 1331: Introduction to Object-Oriented Programming with Java</dt>
+          <dd>Fall Semester</dd>
         </dl>
       </div>
       <!-- UGA -->
       <!-- UNG -->
     </section>
-
+    <br>
+    <aside>
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <dl>
+          <dt>Programming</dt>
+        </dl>
+      </section>
+    </aside>
   </body>
 
-<!-- Footer Things -->
   <footer class=footer>
 
   </footer>
