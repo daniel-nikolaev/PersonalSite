@@ -19,6 +19,7 @@ body {
 }
 section{
     padding-left:15px;
+    display: block;
 }
 
 aside {
