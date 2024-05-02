@@ -9,11 +9,8 @@ body {
 .buford, .sans, .gt, .uga, .ung {
     color:inherit;
 }
-section {
-    background-color: #10A7F9;
-}
 
-table, th, td {
+table, th{
     border:1px solid #041f8e;
 }
 .footer {
