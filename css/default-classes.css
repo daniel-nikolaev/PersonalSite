@@ -17,16 +17,19 @@ body {
     display: flex;
     flex-direction: column;
 }
-section{
-    padding-left:15px;
-    display: block;
+
+table {
+    table-layout: fixed; 
+    width: 100%;
+}
+th, td {
+    padding-left:5px;
 }
 
-aside {
-    width: 30%;
-    margin-left: 15px;
-    float: right;
-    font-style: bold;
-    background-color: #ADD8E6;
+footer {
+    width:100% - 5px;
+    margin-top:auto;
     display: block;
-  }
+    left: 0;
+    bottom: 0;
+}
