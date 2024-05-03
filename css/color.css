@@ -1,3 +1,6 @@
+* {
+    color:inherit;
+}
 html {
     background-color: #212129;
     color:white;
@@ -15,7 +18,12 @@ section {
 
 table, th, td {
     border:1px solid #041f8e;
+    color:inherit;
 }
+ul, li {
+    color:inherit;
+}
+
 .footer {
     background-color: #10A7F9;
 }
