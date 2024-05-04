@@ -11,8 +11,12 @@
     margin-right: 0px;
 }
 
+.education, .skills {
+    color:inherit;
+    padding-left: 5px;
+}
+
 .flex-boxes {
-    background-color: #10A7F9;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -25,7 +29,6 @@
 .flex-boxes > div {
     text-align: center;
     flex-basis: 15%;
-    background-color: #00c4ba;
     margin: 5px;
     padding-top: 20px;
     padding-bottom: 20px;

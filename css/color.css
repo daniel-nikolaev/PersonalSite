@@ -13,6 +13,13 @@ body {
     color:inherit;
 }
 
+.education {
+    background-color: #10A7F9;
+}
+.skills {
+    background-color: #ADD8E6;
+}
+
 table, th{
     border:1px solid #041f8e;
     color:inherit;
@@ -38,4 +45,11 @@ ul, li {
 }
 .quickcard {
     background-color: #10A7F9;
+}
+
+.flex-boxes {
+    background-color: #10A7F9;
+}
+.flex-boxes > div {
+    background-color: #00c4ba;
 }

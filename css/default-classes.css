@@ -1,9 +1,5 @@
-/* Selects all html elements */
-* 
-{
-  box-sizing: border-box;
-  white-space: nowrap;
-  word-wrap: break-word;
+* {
+    color:white;
 }
 
 html, body {
@@ -16,14 +12,17 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-left: 5px;
 }
-
 table {
     table-layout: fixed; 
     width: 100%;
 }
 th, td {
     padding-left:5px;
+}
+a{
+    text-decoration: none;
 }
 
 footer {

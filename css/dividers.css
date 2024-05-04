@@ -7,15 +7,15 @@
 
 /* <hr class="dashed"> */
 hr.dashed {
-  border-top: 3px dashed #000;
+  border-top: 3px dashed #fff;
 }
 /* <hr class="dotted"> */
 hr.dotted {
-  border-top: 3px dotted #000;
+  border-top: 3px dotted #fff;
 }
 /* <hr class="solid"> */
 hr.solid {
-  border-top: 3px solid #000;
+  border-top: 3px solid #fff;
 }
 /* <hr class="rounded"> */
 hr.rounded {
