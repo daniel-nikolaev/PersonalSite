@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Medical Company</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Medical Company</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <h2>Welcome to Our Secure Medical Platform</h2>
+        <p>We are committed to providing top-notch medical services while ensuring the security and privacy of your data.</p>
+        <p>Please log in to access your secure medical records:</p>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Professional Medical Company. All rights reserved.</p>
+    </footer>
+    <script>
+        // Dummy authentication function
+        function authenticate(username, password) {
+            // Implement your authentication logic here
+            // For demonstration purposes, we'll use a simple check
+            if (username === "admin" && password === "password") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Event listener for form submission
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get username and password from the form
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Dummy authentication
+            if (authenticate(username, password)) {
+                alert("Login successful!"); // Replace with actual redirection logic
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
