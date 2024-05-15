@@ -1,0 +1,16 @@
+/* Blue/turquoise */
+
+/* styling for built in html texts */
+h1 {
+    display:inline-block;
+    margin: 10px 0;
+  }
+  .likeh2 {
+    color:white;
+    display:inline-block;
+    margin: 10px 0;
+  }
+  p {
+    color:inherit;
+    font-size: 0.9em;
+  }
