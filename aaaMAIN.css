@@ -4,9 +4,12 @@
 @import "css/default-classes.css";
 @import "css/dividers.css";
 @import "css/parallax.css";
+
+/* Specific CSS Links - Why */
+/* Intro Page */
 @import "css/topnav.css";
-
-
+/* Awards Page */
+@import "css/tabs.css";
 
 /*Icons for Nav Bar*/
 @import url("https://kit.fontawesome.com/0ecee0f13d.js");

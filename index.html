@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Comment -->
 <html lang="en">
   
 <!-- Head Stuff -->
@@ -26,31 +25,15 @@
   <header>
     <div class="navbar" id="Navbar">
       <a class="active" href="https://danielnik.com"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a class="nonactive"href="/resume"><i class="fa-solid fa-user"></i> Resume</a> 
-      
-      <div class="dropdown">
-        <button class="dropbtn"><i class="fa fa-certificate"></i> Certifications
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a class="nonactive" href="#">SANS/GFACT </a>
-        </div>
-      </div>
+      <a class="nonactive" href="/resume"><i class="fa-solid fa-user"></i> Resume</a> 
 
-      <div class="dropdown">
-        <button class="dropbtn"><i class="fa fa-award"></i> Awards
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a class="nonactive" href="#">NCSF</a>
-          <a class="nonactive" href="#">CyberStart America</a>
-        </div>
-      </div>    
+      <a class="nonactive" href="/certifications/"><i class="fa-solid fa-certificate"></i> Certifications</a> 
+      <a class="nonactive" href="/awards/"><i class="fa-solid fa-award"></i> Awards</a> 
       
       <!-- quickcard -->
       <a href="https://card.danielnik.com" class="split"><i class="fa-regular fa-address-card"></i> Quick Card</a>
       <!-- dropdown hamburger for smaller screens -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars"></i></a>
     </div>
   </header>
 
@@ -66,7 +49,7 @@
 
 
     <script>
-      function myFunction() {
+      function topNav() {
         var x = document.getElementById("Navbar");
         if (x.className === "navbar") {
           x.className += " responsive";

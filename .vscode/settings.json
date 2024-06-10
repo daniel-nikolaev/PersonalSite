@@ -1,9 +1,7 @@
 {
-  "cSpell.words": [
-    "dropbtn",
-    "GFACT",
-    "hamburgerright",
-    "NCSF",
-    "quickcard"
-  ]
+  "cSpell.words": ["dropbtn", "GFACT", "hamburgerright", "NCSF", "quickcard"],
+  "files.exclude": {
+    "**/.vscode": true
+    "**/PersonalSite.code-workspace": true
+  }
 }
