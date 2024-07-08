@@ -10,7 +10,7 @@
 .navbar a {
   /* overflow:hidden; */
   float: left;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -30,7 +30,7 @@
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 16px 18px;
   background-color: #041f8e;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */

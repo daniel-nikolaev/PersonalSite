@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 5px;
+    margin-bottom:50px;
 }
 table {
     table-layout: fixed; 
@@ -27,6 +28,7 @@ a{
 }
 
 footer {
+    margin-top: 100px;
     width:100% - 5px;
     margin-top:auto;
     display: block;

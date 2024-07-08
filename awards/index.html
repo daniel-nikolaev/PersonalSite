@@ -22,21 +22,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-<!-- Header Stuff -->
-  <header>
-    <div class="navbar" id="Navbar">
-      <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a class="nonactive" href="/resume"><i class="fa-solid fa-user"></i> Resume</a> 
-
-      <a class="nonactive" href="/certifications"><i class="fa-solid fa-certificate"></i> Certifications</a> 
-      <a class="nonactive" href="/awards"><i class="fa-solid fa-award"></i> Awards</a> 
-      
-      <!-- quickcard -->
-      <a href="https://card.danielnik.com" class="split"><i class="fa-regular fa-address-card"></i> Quick Card</a>
-      <!-- dropdown hamburger for smaller screens -->
-      <a href="javascript:void(0);" class="icon" onclick="topNav()"><i class="fa fa-bars"></i></a>
-    </div>
-  </header>
+  <!-- stuff that standardized the topnav -->
+  <script src="../js/standard.js"></script>
+  <div include-the-html="../z-standard-html/topnav.html"></div> 
+  <script>
+    function topNav() {
+      var x = document.getElementById("Navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 
 <!-- Body Stuff -->
   <body>
@@ -164,20 +162,11 @@
 
 
 
+    </body>
 
+    <!-- footer n extra -->
+    <div include-the-html="../z-standard-html/footer.html"></div> 
     <script>
-      function topNav() {
-        var x = document.getElementById("Navbar");
-        if (x.className === "navbar") {
-          x.className += " responsive";
-        } else {
-          x.className = "navbar";
-        }
-      }
-      </script>
-  </body>
-
-<!-- Footer Things -->
-  <footer class=footer>
-  </footer>
+      includeHTML();
+    </script>
 </html>
