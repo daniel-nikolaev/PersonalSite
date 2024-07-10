@@ -8,6 +8,8 @@
     <!--Linking MAIN CSS Sheet -->
     <link rel="stylesheet" href="../aaaMAIN.css">
 
+    <link rel="stylesheet" href="collapse.css">
+
     <!-- Icon library From Font-Awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/0ecee0f13d.js" crossorigin="anonymous"></script>
@@ -18,115 +20,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-  <header>
-    <div class="navbar" id="Navbar">
-      <a class="active" href="../"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a class="nonactive"href="/resume"><i class="fa-solid fa-user"></i> Resume</a> 
-      <!-- certs dropdown -->
-      <div class="dropdown">
-        <button class="dropbtn"><i class="fa fa-certificate"></i> Certifications
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a class="nonactive" href="#">SANS/GFACT </a>
-        </div>
-      </div>
-      <!-- awards dropdown -->
-      <div class="dropdown">
-        <button class="dropbtn"><i class="fa fa-award"></i> Awards
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a class="nonactive" href="#">NCSF</a>
-          <a class="nonactive" href="#">CyberStart America</a>
-        </div>
-      </div>  
-      <!-- quick card link -->
-      <a href="https://card.danielnik.com" class="split"><i class="fa-regular fa-address-card"></i> Quick Card</a>
-    </div>
-  </header>
+  <!-- stuff that standardized the topnav -->
+  <script src="../js/standard.js"></script>
+  <div include-the-html="../z-standard-html/topnav.html"></div> 
+  <script>
+    function topNav() {
+      var x = document.getElementById("Navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 
   <body>
-    <!-- Education -->
-    <h2>Education</h2>
-    <div class="education">
-      <!-- Buford -->
-      <div id="Buford">
-        <h3>Buford High School</h3>
-        <dl>
-          <dd>Honors/AP Student</dd>
-          <dd>3.96 GPA</dd>
-          <dd>35 ACT</dd>
-          <dd>FBLA, HOSA, DECA, NHS, BETA, CSHS</dd>
-        </dl>
-      </div>
-      <br>
-      <!-- SANS -->
-      <div id="SANS">
-        <h3>SANS Institute</h3>
-        <!-- <h3 style="display: inline;"><a href="https://www.giac.org/certified-professional/Daniel-Nikolaev/224060" 
-          target="blank" style="display: inline; color:black;">GIAC Certified</a></h3> -->
-        <dl>
-          <dt>SEC275: Foundations: Computers, Technology, & Security</dt>
-            <dd>June 2023 - September 2023</dd>
-            <dd>GIAC Foundational Cybersecurity Technologies (GFACT)</dd>
-          <dt>SEC401: Security Essentials - Network, Endpoint, and Cloud</dt>
-            <dd>February 2024 - June 2024</dd>
-            <dd>GIAC Security Essentials (GSEC)</dd>
-        </dl>
-      </div>
-    <!-- GT -->
     <br>
-    <div id="GT">
-      <h3>Georgia Institute of Technology</h3>
-      <dl>
-        <dt>CS 1301: Introduction to Computing</dt>
-          <dd>April 2024 - Present</dd>
-        <dt>CS 1331: Introduction to Object-Oriented Programming with Java</dt>
-          <dd>2024 Fall Semester</dd>
-      </dl>
+    <!-- Work -->
+    <button type="button" class="collapsible"><h2>Work<i class="fa fa-caret-down" style="float:right"></i><h2></button>
+    <div class="content">
+      <h3>Financial Intern Specialist - Jim Ellis Automotive Group (Atlanta, Georgia)</h3>
+      <h4> June 2024 - Present</h4>
+      <hr class="dashed">
+      <h3>Senior Cashier - Nissan Mall of Georgia (Buford, Georgia)</h3>
+      <h4>July 2022 - June 2024</h4>
     </div>
-    <!-- UGA -->
-    <!-- <hr class="solid"> -->
-    <!-- UNG -->
-    <!-- <hr class="solid"> -->
+    <!-- Education -->
+    <button type="button" class="collapsible"><h2>Education<i class="fa fa-caret-down" style="float:right"></i><h2></button>
+    <div class="content">
+      <h4>Lorem ipsum...</h4>
+      <h5>Lorem ipsum...</h5>
+      <hr class="dashed">
     </div>
-    <hr class="solid">
-    <div class="divider-solid" style="color:white;"></div>
-    <h2>Skills</h2>
-    <div class="skills">
-      <dl>
-        <dt>Languages</dt>
-          <dd>Russian</dd>
-          <dd>French</dd>
-        <dd></dd>
-        <dt>Programming</dt>
-          <dd>HTML/CSS</dd>
-          <dd>Python</dd>
-          <dd>C#</dd>
-          <dd>Unity</dd>
-          <dd></dd>
-        <dt>Cybersecurity</dt>
-          <dd>VMWare/VirtualBox</dd>
-          <dd>Kali Linux</dd>
-          <dd>Parrot Sec</dd>
-          <dd>Microsoft Edge</dd>
-          <dd></dd>
-        <dt>Healthcare</dt>
-          <dd>CPR/BLS</dd>
-          <dd>EKG</dd>
-          <dd>Phlebotomy</dd>
-          <dd>Basic Vital Signs</dd>
-          <dd>Range of Motion</dd>
-          <dd></dd>
-        <dt></dt>
-        <dt>Google G-Suite</dt>
-        <dt>Microsoft Office 365</dt>
-      </dl>
-    </div>
+    <!-- Certifications -->
+    <!-- Skills -->
+    <!-- Competitions -->
+
+
+    <!-- script for collapsing menus -->
+    <script src="collapse.js"></script>
   </body>
 
-  <footer class=footer>
-
-  </footer>
+  <!-- footer n extra -->
+  <div include-the-html="../z-standard-html/footer.html"></div> 
+  <script>
+    includeHTML();
+  </script>
 </html>
