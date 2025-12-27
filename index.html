@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Photo Collection</h1>
+        <p>Click any image to expand</p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- <div class="gallery-item"><img src="/photos/" alt="Gallery Image"> -->
+        <div class="gallery-item"><img src="/photos/DSC01801.JPG" alt="Gallery Image"></div>
+        <div class="gallery-item"><img src="/photos/DSC02279.JPG" alt="Gallery Image"></div>
+        <div class="gallery-item"><img src="/photos/DSC02300.JPG" alt="Gallery Image"></div>
+        <div class="gallery-item"><img src="/photos/DSC02346.JPG" alt="Gallery Image"></div>
+        <!-- <div class="gallery-item"><img src="https://picsum.photos/800/1200?random=1" alt="Vertical Image"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/1200/800?random=2" alt="Horizontal Image"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/1000/1000?random=3" alt="Square Image"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/800/1000?random=4" alt="Portrait Image"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/1200/600?random=5" alt="Wide Image"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/600/600?random=6" alt="Small Square"></div> -->
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" id="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Expanded view">
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.getElementById('close');
+        const galleryImages = document.querySelectorAll('.gallery-item img');
+
+        // Open Lightbox
+        galleryImages.forEach(image => {
+            image.addEventListener('click', () => {
+                lightbox.classList.add('active');
+                lightboxImg.src = image.src;
+            });
+        });
+
+        // Close Lightbox
+        const closeLightbox = () => {
+            lightbox.classList.remove('active');
+            lightboxImg.src = ""; // Clear src to save memory
+        };
+
+        closeBtn.addEventListener('click', closeLightbox);
+        
+        // Close when clicking background
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+    </script>
+</body>
+</html>
