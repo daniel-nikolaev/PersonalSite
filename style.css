@@ -196,12 +196,25 @@ h1, h2, h3 {
     border-top: 2px solid var(--color-gray);
 }
 
+.project-tile-link {
+    display: block; 
+    text-decoration: none; /* Crucial: removes the ugly link underline */
+    color: inherit; /* Inherit text color from body */
+    
+    border-right: 2px solid var(--color-gray);
+    border-bottom: 2px solid var(--color-gray);
+}
+
 .project-tile {
     position: relative;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-right: 2px solid var(--color-gray);
     border-bottom: 2px solid var(--color-gray);
+}
+
+.project-tile-link:hover .project-info {
+    opacity: 1;
 }
 
 .project-tile img {
