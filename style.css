@@ -57,8 +57,6 @@ footer {
     font-size: 12px;
     font-family: var(--font-mono);
     text-transform: uppercase;
-    border-top: 2px solid white; 
-    margin-top: 50px;
 }
 
 footer a {
