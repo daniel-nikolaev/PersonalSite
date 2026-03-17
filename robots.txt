@@ -1,0 +1,6 @@
+User-agent: *
+
+# Remove Subfile Indexing
+Disallow: /*.gif$
+Disallow: /*.pdf$
+Disallow: /*.png$
