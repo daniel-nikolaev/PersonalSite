@@ -1,0 +1,33 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+}
+
+header {
+    border-bottom: 3px solid #000;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h1 { 
+    font-size: 
+    3rem; 
+    text-transform: uppercase; }
+
+h2 { 
+    margin-bottom: 
+    10px; 
+    text-decoration: underline; }
+
+p {
+    color: #000000;
+    text-decoration: none;
+}
